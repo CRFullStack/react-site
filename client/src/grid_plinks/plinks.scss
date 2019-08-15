@@ -1,0 +1,73 @@
+.plinks{
+    grid-area: header;
+    grid-column: 4/6;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-self: center;
+    justify-self: center;
+    margin-left: 5rem;
+    z-index: 5;
+
+    .plink{
+        
+        margin: 2rem 0 !important;
+        transform: skew(-191deg) !important;
+        
+        h2{
+            color: white;
+            margin: 0 2rem;
+            transform: skew(191deg);
+            padding: 0 0;
+            line-height: 20px;
+            text-shadow: 1px 1px 2px black, 0 0 1em lightgray;
+            text-decoration: none;
+            
+
+        }
+        button{
+            transition: transform 1s !important;
+            background-color: red;
+        }
+        button:hover{
+            transform: scale(1.2) perspective(1.5px) !important;
+        }
+    }
+    .scroll{
+        i{
+            /**/animation: scrolly infinite 1.3s linear;
+            font-size: 2rem;
+            color: #aaa;
+            pointer-events: none;
+            transform: translate(0, 90px);
+            text-shadow: 1px 1px 2px black;
+        }
+        p{
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            margin: 0 2rem;
+            color: #aaa;
+            font-size: 16px;
+            font-weight: 100;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 1px 1px 1px black;
+            text-transform: capitalize;
+            letter-spacing: .75rem;
+        }
+    }
+
+   
+}
+
+@keyframes scrolly {
+    from {
+      transform:translate(0, -10px);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(0, -50px);
+      opacity: 0;
+    }
+  }
+

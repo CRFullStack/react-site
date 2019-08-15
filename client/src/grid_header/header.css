@@ -1,0 +1,117 @@
+.hero{
+    grid-area: navi !important;
+    grid-column: 1/5 !important;
+    background: url("https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/tottenham-hotspur-v-ajax-uefa-champions-league-semi-final-first-leg-5cdfbea220e3ab575b000001.jpg") no-repeat center center;
+    background-size: contain !important;
+    height: 110vh !important;
+    width: 100% !important;
+    overflow-y: hidden !important;
+    margin-top : 0vh !important;
+    transition: background-size 2s !important;
+    filter: blur(8px) !important;
+    -webkit-filter: blur(.5px) !important;
+    z-index: -1 !important;
+    display: grid !important;
+    grid-template-areas: 
+            "title title message message" !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: 1fr 1fr .5fr !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+
+.hero .hero-overlay{
+    grid-area: title !important;
+    grid-row: 1/4 !important;
+    width: 35% !important;
+    height: 100% !important;
+    transform: skew(-191deg) !important;
+    background: rgba(255, 0, 0, 0.5);
+    border-right: 1px solid red;
+    z-index: 1 !important;
+    box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             
+             0.3em 0.3em 1em rgba(0,0,0,0.3)!important;
+
+    
+}
+.hero .hero-overlay2{
+    grid-area: title !important;
+    grid-row: 1/4 !important;
+    width: 35% !important;
+    height: 100% !important;
+    transform: skew(-11deg) !important;
+    background: rgba(255, 0, 0, 0.5);
+    margin-top : 0px !important;
+    margin-left: -140px !important;
+    z-index: 1 !important;
+
+    
+}
+
+.hero .title{
+    grid-area: title;
+    grid-column: 1/3;
+    grid-row:2/3;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 170px;
+    font-weight: bolder;
+    z-index: 5;
+    line-height: 10rem;
+    opacity: .79;
+    text-shadow: 1px 1px 2px black, 0 0 1em lightgray, 0 0 0.2em black;
+}
+
+.hero .title span{
+    opacity: none !important;
+    color: orangered;
+}
+
+
+.hero .hero-sm-img{
+    grid-area: pic !important;
+    grid-column: 3/5 !important;
+    grid-row: 3/4 !important;
+    transform: skew(-191deg) !important;
+    background: rgba(255, 0, 0, 0.5) ;
+    width: 100% !important;
+    height: 100% !important;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: -30px !important;
+    box-shadow: 
+       inset 
+             
+             0.3em 0.3em 1em rgba(0,0,0,0.3) !important;
+    
+    
+    
+
+}
+.hero .hero-sm-img div{
+    width: 80%;
+    height: auto;
+    transform: skew(191deg);
+    
+
+}
+
+.hero .hero-sm-img div p{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 15px;
+    text-shadow: 1px 1px 2px black;
+}
+
+
